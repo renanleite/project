@@ -25,7 +25,7 @@ void limiar(FILE *arq, FILE *lim){
      copiarCabecalho(arq, lim);
 
 
-     while(fscanf(arq, "%d", &pixel) == 1){       //loop até o final do arquivo, recebendo cada valor da matriz do pgm
+     while(fscanf(arq, "%d", &pixel) == 1){       //loop atÃ© o final do arquivo, recebendo cada valor da matriz do pgm
 
           if(pixel > limiar){
                fprintf(lim, "255 ");
@@ -47,7 +47,7 @@ void negativo(FILE *arq, FILE *neg){
 
      copiarCabecalho(arq, neg);
 
-     while(fscanf(arq, "%d", &pixel) == 1){    //loop até o final do arquivo, recebendo cada valor da matriz do pgm
+     while(fscanf(arq, "%d", &pixel) == 1){    //loop atÃ© o final do arquivo, recebendo cada valor da matriz do pgm
 
          fprintf(neg, "%d ", 255-pixel);
      }
@@ -73,7 +73,7 @@ void histograma(FILE *arq, FILE *his){
      }
      ////////////////////////////////////////
 
-     while(fscanf(arq, "%d", &pixel) == 1){       //loop até o final do arquivo, recebendo cada valor da matriz do pgm
+     while(fscanf(arq, "%d", &pixel) == 1){       //loop atÃ© o final do arquivo, recebendo cada valor da matriz do pgm
 
           vetor[pixel]++;
      }
